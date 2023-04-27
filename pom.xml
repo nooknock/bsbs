@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.himedia</groupId>
+  <artifactId>board-spring-boot-starter</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>board-spring-boot-starter</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- 현재 생성한 메이븐 프로젝트를 자동설정 기능으로 구현하기 위해서 스프링 부트가 제공하는 자동설정 라이브러리들이 필요 -->
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-autoconfigure</artifactId>
+    	
+    </dependency>
+
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-configuration-processor</artifactId>
+    	<optional>true</optional>
+    </dependency>
+  </dependencies>
+  
+  <!-- 만약 앞으로 새로운 라이브러리들을 계속 추가하면서 추가되는 라이브러리들의 버전을 일괄적으로 관리하고 싶으면
+  pom.xml에 <dependencyManagement> 설정을 추가한다.
+   -->
+  <dependencyManagement>
+ 	 <dependencies>
+  		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-dependencies</artifactId>
+  			<version>2.1.5.RELEASE</version>
+  			<type>pom</type>
+  			<scope>import</scope>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
+  
+</project>

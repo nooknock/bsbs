@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "board.jdbc",
+      "type": "com.himedia.jdbc.config.JDBCConnectionManagerProperties",
+      "sourceType": "com.himedia.jdbc.config.JDBCConnectionManagerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "board.jdbc.driver-class",
+      "type": "java.lang.String",
+      "sourceType": "com.himedia.jdbc.config.JDBCConnectionManagerProperties"
+    },
+    {
+      "name": "board.jdbc.password",
+      "type": "java.lang.String",
+      "sourceType": "com.himedia.jdbc.config.JDBCConnectionManagerProperties"
+    },
+    {
+      "name": "board.jdbc.url",
+      "type": "java.lang.String",
+      "sourceType": "com.himedia.jdbc.config.JDBCConnectionManagerProperties"
+    },
+    {
+      "name": "board.jdbc.username",
+      "type": "java.lang.String",
+      "sourceType": "com.himedia.jdbc.config.JDBCConnectionManagerProperties"
+    }
+  ],
+  "hints": []
+}
